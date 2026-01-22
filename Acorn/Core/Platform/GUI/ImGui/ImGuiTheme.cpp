@@ -1,6 +1,6 @@
 #include "ImGuiTheme.h"
 
-namespace Walnut::UI {
+namespace Acorn::UI {
 
 	void SetHazelTheme()
 	{

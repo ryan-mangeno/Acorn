@@ -3,7 +3,7 @@
 #include <imgui.h>
 #include <glm/glm.hpp>
 
-namespace Walnut::UI {
+namespace Acorn::UI {
 
 	namespace Colors
 	{
