@@ -1,0 +1,9 @@
+[submodule "Acorn/vendor/spdlog"]
+	path = Acorn/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git
+[submodule "Acorn/vendor/imgui"]
+	path = Acorn/vendor/imgui
+	url = https://github.com/ryan-mangeno/imgui
+[submodule "Acorn/vendor/yaml-cpp"]
+	path = Acorn/vendor/yaml-cpp
+	url = https://github.com/ryan-mangeno/yaml-cpp
