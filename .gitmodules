@@ -13,3 +13,4 @@
 [submodule "Acorn/vendor/glfw"]
 	path = Acorn/vendor/glfw
 	url = https://github.com/ryan-mangeno/glfw
+	branch = vulkan-support
