@@ -1,5 +1,8 @@
 #pragma once
 
+
+// add ifdef for windows and macos
+
 extern Acorn::Application* Acorn::CreateApplication(int argc, char** argv);
 bool g_ApplicationRunning = true;
 
@@ -19,7 +22,7 @@ namespace Acorn {
 
 }
 
-#if defined(AC_PLATFORM_WINDOWS) && !defined(AC_HEADLESS) && defined(AC_DIST)
+#ifdef AC_DIST
 
 #include <Windows.h>
 
@@ -35,4 +38,5 @@ int main(int argc, char** argv)
 	return Acorn::Main(argc, argv);
 }
 
-#endif // defined(AC_PLATFORM_WINDOWS) && defined(AC_DIST)
+#endif // AC_DIST
+

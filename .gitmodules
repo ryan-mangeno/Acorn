@@ -4,6 +4,7 @@
 [submodule "Acorn/vendor/imgui"]
 	path = Acorn/vendor/imgui
 	url = https://github.com/ryan-mangeno/imgui
+  	branch = acorn-docking
 [submodule "Acorn/vendor/yaml-cpp"]
 	path = Acorn/vendor/yaml-cpp
 	url = https://github.com/ryan-mangeno/yaml-cpp
@@ -14,3 +15,6 @@
 	path = Acorn/vendor/glfw
 	url = https://github.com/ryan-mangeno/glfw
 	branch = vulkan-support
+[submodule "Acorn/vendor/stb"]
+	path = Acorn/vendor/stb
+	url = https://github.com/nothings/stb.git
