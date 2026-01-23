@@ -500,8 +500,7 @@ namespace Acorn {
         ImGui_ImplGlfw_InitForVulkan(m_WindowHandle, true);
         ImGui_ImplVulkan_InitInfo init_info = {};
         
-        // --- 2026 BACKEND UPDATE: Struct Refactor ---
-        init_info.ApiVersion = VK_API_VERSION_1_3; // Required for Mac/Modern Features
+        init_info.ApiVersion = VK_API_VERSION_1_3;
         init_info.Instance = g_Instance;
         init_info.PhysicalDevice = g_PhysicalDevice;
         init_info.Device = g_Device;

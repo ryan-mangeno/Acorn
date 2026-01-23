@@ -46,11 +46,6 @@ target_include_directories(stb PUBLIC Acorn/vendor/stb)
 
 # Vulkan
 find_package(Vulkan REQUIRED)
-if(APPLE)
-    find_library(MOLTENVK_LIBRARY MoltenVK 
-        PATHS /opt/homebrew/lib /usr/local/lib 
-        REQUIRED)
-endif()
 
 # ============================================================================
 # Acorn Engine Library

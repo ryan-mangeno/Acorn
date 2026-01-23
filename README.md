@@ -28,7 +28,7 @@ cd Acorn
 
 ### 2. Install Deps
 ```bash
-brew install molten-vk vulkan-headers vulkan-loader
+brew install molten-vk vulkan-loader vulkan-headers vulkan-tools
 ```
 
 ### 3. Make and Run Build
@@ -42,15 +42,12 @@ cmake --build build
 MoltenVK requires Vulkan loader headers and libraries to be visible. Add these exports in your shell:
 
 ```bash
-# Path to Vulkan SDK (Homebrew)
-export VULKAN_SDK=/opt/homebrew/opt/vulkan-loader
+sudo mkdir -p /opt/homebrew/share/vulkan/icd.d
 
-# Include Vulkan headers
-export CPLUS_INCLUDE_PATH=$VULKAN_SDK/include:$CPLUS_INCLUDE_PATH
 
-# Add Vulkan libraries to linker path
-export LIBRARY_PATH=$VULKAN_SDK/lib:$LIBRARY_PATH
-export DYLD_LIBRARY_PATH=$VULKAN_SDK/lib:$DYLD_LIBRARY_PATH
+sudo ln -sf \
+"$(brew list molten-vk | grep MoltenVK_icd.json)" \
+/opt/homebrew/share/vulkan/icd.d/MoltenVK_icd.json
 ```
 
 
