@@ -389,8 +389,14 @@ static void FramePresent(ImGui_ImplVulkanH_Window* wd)
     wd->SemaphoreIndex = (wd->SemaphoreIndex + 1) % wd->SemaphoreCount; // Now we can use the next set of semaphores
 }
 
+
+/*
+
 // Main code
-int main(int, char**)
+*/
+
+
+void Application::Run()
 {
     glfwSetErrorCallback(glfw_error_callback);
     if (!glfwInit())
@@ -555,6 +561,11 @@ int main(int, char**)
             FrameRender(wd, draw_data);
             FramePresent(wd);
         }
+
+        float time = GetTime();
+        float frame_time = time - m_LastFrameTime;
+        m_TimeStep = glm::min<float>(frame_time, 0.0333f);
+        m_LastFrameTime = time;
     }
 
     // Cleanup
