@@ -7,3 +7,9 @@
 [submodule "Acorn/vendor/yaml-cpp"]
 	path = Acorn/vendor/yaml-cpp
 	url = https://github.com/ryan-mangeno/yaml-cpp
+[submodule "Acorn/vendor/glm"]
+	path = Acorn/vendor/glm
+	url = https://github.com/g-truc/glm.git
+[submodule "Acorn/vendor/glfw"]
+	path = Acorn/vendor/glfw
+	url = https://github.com/ryan-mangeno/glfw

@@ -1,3 +1,20 @@
+
+# Build directories
+build/
+**/build/
+
+# MacOS specific
+.DS_Store
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+*.a
+*.so
+*.dylib
+
+
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
